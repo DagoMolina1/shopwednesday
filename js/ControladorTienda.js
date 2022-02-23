@@ -1,27 +1,18 @@
-//Datos De Entrada (Comentario de linea: "//")
-/*
-Esto es un comentario de bloque:
-*/
+/*--------------------------------------*/
+//Controlando etiquetas (23 - 02 - 2022)
+//1. crear una variable para guardar una etiqueta
+let etiquetaTitulo = document.getElementById("titulo")
+console.log(etiquetaTitulo)
 
-//ENTRADAS==VARIABLES==CONSTANTES
-let nombreProducto = 'batimovil'
-let precioProducto = 400000
-let pesoProducto = 18.5
-let tieneDescuento = true
-let descripcionProducto = 'Baimovil a escala'
-let telefonoVendedor = '3218217729'
+//2. como modificar el texto de una etiqueta
+etiquetaTitulo.textContent="Rojos vos no existis"
 
-const NOMBRE_CLIENTE = "Dago Molina"
+let etiquetaMenu = document.getElementById("menu")
+console.log(etiquetaMenu)
+etiquetaMenu.textContent="menu"
 
-//Arreglos unidimensionales (vectores) sirven par almacena varios elementos en un sola ariable
+let etiquetaFotomal = document.getElementById("fotomal")
+etiquetaFotomal.src="img/DVNvD9LW0AAkTU8.jpg"
 
-let productos = ["Batimovil", "camisate", "gorra", "bati", "Bati Morral"]
-
-//Datos de Salida
-console.log("Buenas")
-console.log(nombreProducto)
-console.log("Sunombre es: " + NOMBRE_CLIENTE + " y su producto es " + nombreProducto)
-console.log("**********")
-console.log(productos)
-console.log(productos2)
-
+//Cambiar el estilo de la etiqueta
+etiquetaTitulo.classList.add("text-center")
